@@ -45,3 +45,9 @@ h2 {
     border-right-width: 20px;
     border-color: red;
 }
+article {
+    color: #ffc;
+    background-color: #009;
+}
+caption {caption-side: bottom}
+/*이건 내가 떠올려서 넣은것임*/

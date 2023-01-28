@@ -233,7 +233,157 @@
         </ul>
       </section>
     </article>
-    <br />
+
+    <article>
+      <header>
+          <h1>Alternatively&hellip;</h1>
+          <p>[An introduction]</p>
+      </header>
+      <section id="main_content">
+          <p>[Content]</p>
+      </section>
+      <footer>
+          <p>[End notes]</p>
+      </footer>
+  </article>
+  <footer>
+    <p>[Copyright bumf]</p>
+</footer>
+  
+<section id="main_content">
+    <h1>Tixall</h1>
+    <p>[All about Tixall]</p>
+    <aside>
+        <h2>Tixall Obelisk</h2>
+        <p>[A short note about Tixall Obelisk]</p>
+    </aside>
+    <p>[Maybe a bit more about Tixall]</p>
+</section>
+
+<figure>
+  <img src="obelisk.jpg">
+  <figcaption>Tixall Obelisk</figcaption>
+</figure>
+
+<nav id="main_nav">
+  <ul>
+      <li><a href="/tutorials/">Tutorials</a></li>
+      <li><a href="/techniques/">Techniques</a></li>
+      <li><a href="/examples/">Examples</a></li>
+      <li><a href="/references/">References</a></li>
+  </ul>
+</nav>
+<!--그냥 ul이랑 a herf쓰는거랑 nav 쓰는거랑 보이는건 차이가 없는데 왜 nav를 쓰는지?-->
+<p>Written by Doctor Who on <time datetime="2023-11-21">Thursday 21st November 2023</time>.</p>
+<blockquote>
+  <p>He wants to play with his <mark>Legos</mark></p>
+</blockquote>
+
+<p>The person being quoted is clearly American because, for some odd reason, they pluralise "Lego".</p>
+
+<!--[if IE]><link href="stupidie.css" rel="stylesheet"><![endif]-->
+<table>
+  <colgroup>
+      <col>
+      <col class="alternative">
+      <col>
+  </colgroup>
+  <tr>
+      <td>This</td>
+      <td>That</td>
+      <td>The other</td>
+  </tr>
+  <tr>
+      <td>Ladybird</td>
+      <td>Locust</td>
+      <td>Lunch</td>
+  </tr>
+</table>
+<!--여기서 alternative 의미를 잘 모르겠음-->
+<table>
+  <colgroup>
+      <col>
+      <col span="2" class="alternative">
+  </colgroup>
+  <!--span의 지정된 숫자는 X번째 열을 뜻함-->
+  <br>
+  <table>
+    <caption>Locust mating habits</caption>
+    <!--테이블에 대한 설명 글 넣을때 캡션 사용-->
+    <thead>
+        <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <!-- etc. -->
+    </tbody>
+    <!--tfoot은 head 아래에 있어도 늘 표의 맨 마지막 row에 들어감-->
+</table>
+<ul>
+  <li><a href="here.html" tabindex="1">Here</a></li>
+  <li><a href="there.html" tabindex="3">There</a></li>
+  <li><a href="limbo.html" tabindex="2">Limbo</a></li>
+</ul>
+<p>I'm really bad at writing link text. <a href="inept.html" title="Why I'm rubbish at writing link text: An explanation and an apology.">Click here</a> to find out more.</p>
+<!--href와 타이틀을 함께 사용하면 마우스오버할때 설명이 나옴-->   
+<a href="somepage.html" accesskey="s">Some page</a>
+<!--accesskey는 단축키 설정임. 잘안됨-->
+<form>
+  <label for="yourName">Your Name</label>
+  <input name="yourName" id="yourName">
+  </form>
+  <!--네임과 아이디의 차이는 무엇인가. 
+    Both name and id attributs are typically required; 
+    the name for the form to handle that field and 
+    the id for the label to associate it to.
+    하지만 정확하게 이해는 안됨-->
+    <form action="somescript.php" >
+      <fieldset>
+          <legend>Name</legend>
+          <p>First name <input name="firstName"></p>
+          <p>Last name <input name="lastName"></p>
+      </fieldset>
+      <fieldset>
+          <legend>Address</legend>
+          <p>Address <textarea name="address"></textarea></p>
+          <p>Postal code <input name="postcode"></p>
+      </fieldset>
+      </form>
+      <!--필드를 묶어줄때는 fieldset 사용-->
+      <!--optgroup 레이블을 설정하면 그룹핑이 됨-->
+      <select name="country">
+        <optgroup label="Africa">
+            <option value="gam">Gambia</option>
+            <option value="mad">Madagascar</option>
+            <option value="nam">Namibia</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="fra">France</option>
+            <option value="rus">Russia</option>
+            <option value="uk">UK</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="can">Canada</option>
+            <option value="mex">Mexico</option>
+            <option value="usa">USA</option>
+        </optgroup>
+    </select>
+<br />
     <br />
   </body>
 </html>
